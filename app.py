@@ -35,4 +35,5 @@ user_input_encoded = user_input_encoded[training_columns]
 # Predict and display 
 if st.button('Predict Price'):
     prediction = model.predict(user_input_encoded)
-    st.success(f'Predicted Laptop Price: {price[0]:.2f}')
+    st.success(f'Predicted Laptop Price: {Price_euros[0]:.2f}')
+
