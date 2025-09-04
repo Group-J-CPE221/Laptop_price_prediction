@@ -34,13 +34,14 @@ user_input_encoded = user_input_encoded[training_columns]
 
 # Predict and display 
 if st.button('Predict Price'):
-    price = model.predict(user_input_encoded)
+    price = model.predict(user_input_encoded)[0]
 
     # prevent negative prices
     if price < 0:
         price = 0
         
-    st.success(f'Predicted Laptop Price: {price[0]:.2f}')
+    st.success(f'Predicted Laptop Price: {price:.2f}')
+
 
 
 
