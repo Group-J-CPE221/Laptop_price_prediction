@@ -40,7 +40,8 @@ if st.button('Predict Price'):
     if price < 0:
         price = 0
         
-    st.success(f'Predicted Laptop Price: {price:.2f}')
+    st.success(f'Predicted Laptop Price: €{price:.2f}')
+
 
 
 
