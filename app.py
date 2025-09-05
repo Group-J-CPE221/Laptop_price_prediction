@@ -13,7 +13,7 @@ st.title("Laptop Price Predictor")
 st.write('Enter laptop features to predict the price:')
 
 # User Inputs
-company = st.selectbox('Company', ['HP', 'Dell', 'MacOS', 'Lenovo', 'Asus'])
+company = st.selectbox('Company', ['HP', 'Dell', 'Apple', 'Lenovo', 'Acer'])
 ram = st.selectbox('RAM (GB)', [2,4, 8, 12,16])
 opsys = st.selectbox('Operating System', ['Windows', 'MacOS', 'Linux', 'Other'])
 typename = st.selectbox('Laptop Type',['Workstations','Gaming','Ultrabooks','Notebooks','Netbooks'])
@@ -41,6 +41,7 @@ if st.button('Predict Price'):
         price = 0
         
     st.success(f'Predicted Laptop Price: €{price:.2f}')
+
 
 
 
