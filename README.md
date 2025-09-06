@@ -16,6 +16,6 @@ The Streamlit app for this project is live here:
 - 'random_forest_regression_model_GroupJ.ipynb' → Jupyter Notebook with data preprocessing, training, and evaluation for random forest regression
 - 'Group J list.xslx' → A list of Group J memebers containing the required information
 - 'Laptop_price_model.pkl' → Trained machine learning model for linear regression
-- 'model_columns.pkl → Columns used during model training for linear regression
-- 'Laptop_Price_Prediction_GroupJ.ipynb → Jupyter Notebook with data preprocessing, training, and evaluation for linear regression
-- 'Mini - Project Report Group J → Summarizes the entire workflow(EDA,model building and evaluation) and provides instructions on how to use the deployed streamlit app
+- 'model_columns.pkl' → Columns used during model training for linear regression
+- 'Laptop_Price_Prediction_GroupJ.ipynb' → Jupyter Notebook with data preprocessing, training, and evaluation for linear regression
+- 'Mini - Project Report Group J' → Summarizes the entire workflow(EDA,model building and evaluation) and provides instructions on how to use the deployed streamlit app
