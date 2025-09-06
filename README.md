@@ -18,3 +18,4 @@ The Streamlit app for this project is live here:
 - 'Laptop_price_model.pkl' → Trained machine learning model for linear regression
 - 'model_columns.pkl → Columns used during model training for linear regression
 - 'Laptop_Price_Prediction_GroupJ.ipynb → Jupyter Notebook with data preprocessing, training, and evaluation for linear regression
+- 'Mini - Project Report Group J → Summarizes the entire workflow(EDA,model building and evaluation) and provides instructions on how to use the deployed streamlit app
