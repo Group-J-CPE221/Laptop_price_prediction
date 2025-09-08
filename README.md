@@ -19,3 +19,13 @@ The Streamlit app for this project is live here:
 - 'model_columns.pkl' → Columns used during model training for linear regression
 - 'Laptop_Price_Prediction_GroupJ.ipynb' → Jupyter Notebook with data preprocessing, training, and evaluation for linear regression
 - 'Mini - Project Report Group J' → Summarizes the entire workflow(EDA,model building and evaluation) and provides instructions on how to use the deployed streamlit app
+- 'random_forest_regression_model_Updated.ipynb' → Jupyter Notebook with data preprocessing, training, and evaluation for random forest regression with updated random state of 28
+- 'rf_model_columns_Updated.pkl' → Columns used during model training for random forest regression with updated random state of 28
+- 'random_forest_regression_model_Updated.pkl' → Trained machine learning model for random forest regression with updated random state of 28
+- 'linear_regression_model.ipynb' → Jupyter Notebook with data preprocessing, training, and evaluation for linear regression with updated random state of 28
+- 'lr_model_columns.pkl' → Columns used during model training for linear regression with updated random state of 28
+- 'linear_regression_model.pkl' → Trained machine learning model for linear regression with updated random state of 28
+- 'Mini - Project Report Group J Updated' → Summarizes the entire workflow(EDA,model building and evaluation) and provides instructions on how to use the deployed streamlit app with Updated Model building and Evaluation values
+
+  ## Note
+  All files with "Updated" as part of their name are the actual files as random state was corrected from 42 to 28 including linear_regression_model.ipynb, lr_model_columns.pkl, linear_regression_model.pkl.
