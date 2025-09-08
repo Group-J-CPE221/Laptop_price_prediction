@@ -4,10 +4,10 @@ import pandas as pd
 import joblib
 
 # Load the trained model
-model = joblib.load('random_forest_regressor_model.pkl')
+model = joblib.load('random_forest_regressor_model_Updated.pkl')
 
 # Load the training columns
-training_columns = joblib.load("rf_model_columns.pkl")
+training_columns = joblib.load("rf_model_columns_Updated.pkl")
 
 st.title("Laptop Price Predictor")
 st.write('Enter laptop features to predict the price:')
@@ -41,6 +41,7 @@ if st.button('Predict Price'):
         price = 0
         
     st.success(f'Predicted Laptop Price: €{price:.2f}')
+
 
 
 
