@@ -1,31 +1,69 @@
-# Laptop_price_prediction
+# Laptop Price Prediction
 
-The project trained two models :Linear Regression and Random Forest Regression.  
-After evaluation,Random Forest outperformed Linear Regression and was used as final deployed model
+Predicts laptop prices using machine learning with comprehensive feature engineering and exploratory data analysis.
+
+## Model Performance
+
+**Final Model:** Random Forest Regressor  
+**Metrics:**
+- **RMSE:** 3.52
+- **MAE:** 1.84
+- **R²:** 1.00
+- **Training R²:** 0.9999
+
+## Dataset
+
+**Source:** Kaggle – Laptop Price Dataset by muhammetvarl  
+**Size:** 1,303 entries with 13 features  
+**Target:** Price in Euros (€)  
+**Geographic Scope:** European laptop market
+
+## Exploratory Data Analysis (EDA)
+
+Key findings revealed what drives laptop prices:
+
+- **RAM Size:** Strongest single predictor (correlation: 0.74)
+- **Brand Reputation:** Razer (~€2,387), LG (~€2,099), Apple (~€1,562) command premium; Acer (~€627), Chuwi (~€314) budget-tier
+- **Laptop Type:** Workstations (~€2,158) and Gaming (~€1,669) are premium; Notebooks (~€779) and Netbooks (~€636) are budget
+- **Operating System:** MacOS (~€1,747) and Windows (~€1,622) premium; Linux (~€617) and Chrome OS (~€554) budget
+
+## Feature Engineering
+
+Enhanced model interpretability and performance:
+- **Log_Price:** Log transformation to reduce skewness
+- **Screen_Area:** Calculated from screen diagonal
+- **Price_per_GB:** Price normalized by RAM capacity
+- **Portability Index:** Weight ÷ screen size ratio
+- **Is_Touchscreen:** Binary touchscreen indicator
+- **OS_Category:** Grouped operating systems
+- **Is_Gaming / Is_Workstation:** Binary laptop category flags
+
+## Methodology
+
+**Data Processing:**
+- Handled outliers using IQR method
+- Applied label encoding and one-hot encoding for categorical variables
+- 80/20 train-test split
+
+**Model Selection:**
+- Evaluated Linear Regression (baseline) — R² 0.95 but produced unrealistic negative prices
+- Selected Random Forest Regressor (100 estimators, random_state=42) — robust, realistic predictions
 
 ## Deployment
 
-The Streamlit app for this project is live here:  
-[Laptop Price prediction app] (https://laptoppriceprediction-wtjq6qfyt8x8wcozgrmcsm.streamlit.app)
+**Live App:** [Laptop Price Prediction](https://laptoppriceprediction-wtjq6qfyt8x8wcozgrmcsm.streamlit.app)
 
-## Files in this Repository
-- 'app.py' → Streamlit app code  
-- 'random_forest_regression_model.pkl' → Trained machine learning model for random forest regression
-- 'rf_model_columns.pkl' → Columns used during model training for random forest regression
-- 'requirements.txt' → Dependencies for deployment  
-- 'random_forest_regression_model_GroupJ.ipynb' → Jupyter Notebook with data preprocessing, training, and evaluation for random forest regression
-- 'Group J list.xslx' → A list of Group J memebers containing the required information
-- 'Laptop_price_model.pkl' → Trained machine learning model for linear regression
-- 'model_columns.pkl' → Columns used during model training for linear regression
-- 'Laptop_Price_Prediction_GroupJ.ipynb' → Jupyter Notebook with data preprocessing, training, and evaluation for linear regression
-- 'Mini - Project Report Group J' → Summarizes the entire workflow(EDA,model building and evaluation) and provides instructions on how to use the deployed streamlit app
-- 'random_forest_regression_model_Updated.ipynb' → Jupyter Notebook with data preprocessing, training, and evaluation for random forest regression with updated random state of 28
-- 'rf_model_columns_Updated.pkl' → Columns used during model training for random forest regression with updated random state of 28
-- 'random_forest_regression_model_Updated.pkl' → Trained machine learning model for random forest regression with updated random state of 28
-- 'linear_regression_model.ipynb' → Jupyter Notebook with data preprocessing, training, and evaluation for linear regression with updated random state of 28
-- 'lr_model_columns.pkl' → Columns used during model training for linear regression with updated random state of 28
-- 'linear_regression_model.pkl' → Trained machine learning model for linear regression with updated random state of 28
-- 'Mini - Project Report Group J Updated' → Summarizes the entire workflow(EDA,model building and evaluation) and provides instructions on how to use the deployed streamlit app with Updated Model building and Evaluation values
+Enter laptop specifications (brand, RAM, OS, screen type) to get real-time price predictions.
 
-  ## Note
-  All files with "Updated" as part of their name are the actual files as random state was corrected from 42 to 28 including linear_regression_model.ipynb, lr_model_columns.pkl, linear_regression_model.pkl.
+**Tech Stack:**
+- Python (pandas, scikit-learn, numpy)
+- Streamlit (interactive deployment)
+- Jupyter Notebook (development & analysis)
+
+## Repository Files
+
+- `random_forest_regression_model.ipynb` — Full data processing, EDA, feature engineering, model training & evaluation
+- `app.py` — Streamlit web application
+- `random_forest_regression_model.pkl` — Trained Random Forest model
+- `rf_model_columns.pkl` — Feature columns for inference
+- `requirements.txt` — Python dependencies
