@@ -6,8 +6,8 @@ Predicts laptop prices using machine learning with comprehensive feature enginee
 
 **Final Model:** Random Forest Regressor  
 **Metrics:**
-- **RMSE:** 3.52
-- **MAE:** 1.84
+- **RMSE:** 2.89
+- **MAE:** 1.56
 - **R²:** 1.00
 - **Training R²:** 0.9999
 
@@ -47,7 +47,7 @@ Enhanced model interpretability and performance:
 
 **Model Selection:**
 - Evaluated Linear Regression (baseline) — R² 0.95 but produced unrealistic negative prices
-- Selected Random Forest Regressor (100 estimators, random_state=42) — robust, realistic predictions
+- Selected Random Forest Regressor (100 estimators, random_state=28) — robust, realistic predictions
 
 ## Deployment
 
