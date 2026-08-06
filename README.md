@@ -62,8 +62,8 @@ Enter laptop specifications (brand, RAM, OS, screen type) to get real-time price
 
 ## Repository Files
 
-- `random_forest_regression_model.ipynb` — Full data processing, EDA, feature engineering, model training & evaluation
+- `random_forest_regression_model_Updated.ipynb` — Full data processing, EDA, feature engineering, model training & evaluation
 - `app.py` — Streamlit web application
-- `random_forest_regression_model.pkl` — Trained Random Forest model
-- `rf_model_columns.pkl` — Feature columns for inference
+- `random_forest_regression_model_Updated.pkl` — Trained Random Forest model
+- `rf_model_columns_Updated.pkl` — Feature columns for inference
 - `requirements.txt` — Python dependencies
